@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.predictionArray = [[NSArray alloc] initWithObjects:@"ACTION",@"BOOM",@"EXPLOSION",@"GIRL POWER",@"#aufschrei",@"CHUCK NORRIS", nil];
+    self.predictionArray = [[NSArray alloc] initWithObjects:@"ACTION",@"BOOM",@"EXPLOSION",@"GIRL POWER",@"#aufschrei",@"CHUCK NORRIS",@"RUMBLE", nil];
     
     self.predictionLabel.layer.cornerRadius = 150;
     
