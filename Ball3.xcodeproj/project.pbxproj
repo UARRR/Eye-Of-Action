@@ -19,6 +19,8 @@
 		8F7BB48416B1D996005745CA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7BB48216B1D996005745CA /* MainStoryboard.storyboard */; };
 		8F7BB48716B1D996005745CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7BB48616B1D996005745CA /* ViewController.m */; };
 		C592BE6A16B2AF5300CD26C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C592BE6916B2AF5300CD26C2 /* QuartzCore.framework */; };
+		F0C836E016B306C400159BE3 /* ball3_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C836DF16B306C400159BE3 /* ball3_icon.png */; };
+		F0C836E316B306CC00159BE3 /* ball3_icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = F0C836E216B306CC00159BE3 /* ball3_icon_small.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8F7BB48516B1D996005745CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8F7BB48616B1D996005745CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C592BE6916B2AF5300CD26C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F0C836DF16B306C400159BE3 /* ball3_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball3_icon.png; sourceTree = "<group>"; };
+		F0C836E216B306CC00159BE3 /* ball3_icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball3_icon_small.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		8F7BB45B16B1D996005745CA = {
 			isa = PBXGroup;
 			children = (
+				F0C836E216B306CC00159BE3 /* ball3_icon_small.png */,
+				F0C836DF16B306C400159BE3 /* ball3_icon.png */,
 				8F7BB47016B1D996005745CA /* Ball3 */,
 				8F7BB46916B1D996005745CA /* Frameworks */,
 				8F7BB46716B1D996005745CA /* Products */,
@@ -167,6 +173,8 @@
 				8F7BB47F16B1D996005745CA /* Default@2x.png in Resources */,
 				8F7BB48116B1D996005745CA /* Default-568h@2x.png in Resources */,
 				8F7BB48416B1D996005745CA /* MainStoryboard.storyboard in Resources */,
+				F0C836E016B306C400159BE3 /* ball3_icon.png in Resources */,
+				F0C836E316B306CC00159BE3 /* ball3_icon_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
