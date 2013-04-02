@@ -41,7 +41,8 @@
                             @"GIRL POWER",
                             @"#aufschrei",
                             @"CHUCK NORRIS",
-                            @"RUMBLE", nil];
+                            @"RUMBLE",
+                            @"😩", nil];
     
     self.predictionLabel.layer.cornerRadius = 150;
     
@@ -66,7 +67,9 @@
     self.bildBruesteContainer.animationRepeatCount = 8;
     [self.bildBruesteContainer startAnimating];
     
-    
+    self.uselessSwitch.tintColor = self.predictionLabel.backgroundColor;
+    [self.uselessSwitch addTarget:self action:@selector(switched) forControlEvents:UIControlEventValueChanged];
+
     
 
     
@@ -101,6 +104,7 @@
     CGFloat blue = arc4random_uniform(100)/100.0;
     self.predictionLabel.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
     self.predictionLabel.textColor = [UIColor whiteColor];
+    self.uselessSwitch.tintColor = self.predictionLabel.backgroundColor;
 }
 
 - (BOOL) canBecomeFirstResponder {
@@ -121,6 +125,7 @@
         CGFloat blue = arc4random_uniform(100)/100.0;
         self.predictionLabel.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
         self.predictionLabel.textColor = [UIColor whiteColor];
+        self.uselessSwitch.tintColor = self.predictionLabel.backgroundColor;
         
         NSUInteger curiousCat = arc4random_uniform(self.randomCat.count);
         self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed: [self.randomCat objectAtIndex:curiousCat]]];
@@ -137,6 +142,10 @@
 
 - (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
     NSLog(@"Motion cancelled");
+}
+
+- (void) switched {
+    [self.uselessSwitch setOn:NO animated:YES];
 }
 
 
